@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Github | Who Knows]]></title>
   <link href="http://eebs.github.com/blog/categories/github/atom.xml" rel="self"/>
   <link href="http://eebs.github.com/"/>
-  <updated>2013-01-14T21:43:40-05:00</updated>
+  <updated>2013-01-14T21:51:19-05:00</updated>
   <id>http://eebs.github.com/</id>
   <author>
     <name><![CDATA[Eebs]]></name>
@@ -23,6 +23,15 @@
 <p>I saw a post on Reddit about installing Octopress on Windows, and something about the Octo/Github wording made me click the link. Once I figured out what Octopress was, I realized I most definitely wouldn't want to install it on Windows, but I may check it out on my laptop. Octopress is a "blogging framework for hackers", which sounds fairly intriguing. It's built to use <a href="https://github.com/mojombo/jekyll">Jekyll</a>, something I had heard of in the past, mostly from <a href="http://kylerush.net/blog/meet-the-obama-campaigns-250-million-fundraising-platform/">Kyle Rush's</a> blog post on the Obama fundraising platform. It's written in Ruby, my new favorite language, so I decided I'd try it out.</p>
 
 <p>I followed the installation instructions on the Octopress page, and the install went smoothly. Github pages took a little while to build, but once it was up it worked well. I even managed to hook it up to my own domain. Using git to make posts is a little weird, but I think I'll get used to the process. There are some helper commands (implemented as rake tasks) that you can run to make new posts, generate the site, and even deploy, which makes things much easier. I'm still going to have to write some aliases because for whatever reason I have to run <code>bundle exec rake</code> instead of just <code>rake</code>. A couple of the commands seem to be often run in sequence, so I'll probably make an alias to run them together. I'll try and remember to post those here somewhere (I think Octopress has built in gist support or something).</p>
+
+<p><em>- Edit -</em> Found the gist support:</p>
+
+<p><div><script src='https://gist.github.com/4535615.js'></script>
+<noscript><pre><code>alias octo='bundle exec rake'
+alias octog='bundle exec rake generate'
+alias octod='bundle exec rake deploy'
+alias octogd='bundle exec rake generate &amp;&amp; bundle exec rake deploy'</code></pre></noscript></div>
+</p>
 
 <p>I'm not entirely sure what I'll end up using this blog for mostly, but it'll probably be a fair amount of everything. Maybe there will be some rants about code, or links to neat articles. I might add some posts about EvE Online, or maybe some entries about my ongoing Rails projects.</p>
 
