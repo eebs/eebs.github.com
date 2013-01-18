@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Up and Running with Octopress - Who Knows</title>
+  <title>Berkeley edX: Software as a Service - Who Knows</title>
   <meta name="author" content="Eebs">
 
   
-  <meta name="description" content="As you can clearly see, I just finished installing Octopress. Over the past few weeks I have had sudden urges to write things down, either for &hellip;">
+  <meta name="description" content="Some background: One of the things my company and many others are doing is moving to a more SaaS oriented business model. It&#8217;s a growing space &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://eebs.github.com/blog/2013/01/14/up-and-running-with-octopress/">
+  <link rel="canonical" href="http://eebs.github.com/blog/2013/01/16/berkeley-edx-software-as-a-service/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -79,7 +79,7 @@
   
   <header>
     
-      <h1 class="entry-title">Up and Running With Octopress</h1>
+      <h1 class="entry-title">Berkeley edX: Software as a Service</h1>
     
     
       <p class="meta">
@@ -95,31 +95,20 @@
   
 
 
-<time datetime="2013-01-14T17:52:00-05:00" pubdate data-updated="true">Jan 14<span>th</span>, 2013</time>
+<time datetime="2013-01-16T19:09:00-05:00" pubdate data-updated="true">Jan 16<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>As you can clearly see, I just finished installing <a href="http://octopress.org/">Octopress</a>. Over the past few weeks I have had sudden urges to write things down, either for discussion or mental relief. I used to have a blog on Wordpress several years ago, but I stopped writing for a while, and eventually trashed it. I figured I&#8217;d start one up again, using it to document various projects or ideas of mine.</p>
+<div class="entry-content"><p>Some background: One of the things my company and <a href="http://techcrunch.com/2013/01/03/forrester-saas-and-data-driven-smart-apps-fueling-worldwide-software-growth/">many</a> <a href="http://www.computerworlduk.com/in-depth/cloud-computing/3419286/saas-in-2013-companies-trends-watch/">others</a> are doing is moving to a more SaaS oriented business model. It&#8217;s a growing space in software engineering, and as we see more and more cloud based services I can only expect this trend to continue. SaaS provides many benefits, especially for a rapidly changing product as ours. SaaS would allow us to roll out features to clients quickly and in a scalable manner, ensuring some level of consistency across all clients without having to worry about which version a client was on, which version fixed a bug they had, etc. We recently made some changes to our software that made it technically feasible to use a SaaS methodology, allowing us to run multiple clients off one instance of our product. We don&#8217;t currently have that set up, but we&#8217;re definitely moving in the right direction.</p>
 
-<p>I saw a post on Reddit about installing Octopress on Windows, and something about the Octo/Github wording made me click the link. Once I figured out what Octopress was, I realized I most definitely wouldn&#8217;t want to install it on Windows, but I may check it out on my laptop. Octopress is a &#8220;blogging framework for hackers&#8221;, which sounds fairly intriguing. It&#8217;s built to use <a href="https://github.com/mojombo/jekyll">Jekyll</a>, something I had heard of in the past, mostly from <a href="http://kylerush.net/blog/meet-the-obama-campaigns-250-million-fundraising-platform/">Kyle Rush&#8217;s</a> blog post on the Obama fundraising platform. It&#8217;s written in Ruby, my new favorite language, so I decided I&#8217;d try it out.</p>
+<p>So with all this in mind, when I saw that Berkeley edX was offering a course on SaaS, I figured I&#8217;d take it. It&#8217;s taught using TDD, Agile development, and Rails, all of which I&#8217;m familiar and use both at work and at home. The software engineering course I took at university wasn&#8217;t very helpful to me, and I thought it might be fun to take a course that appears to be more in line with my expectations for a software engineering course.</p>
 
-<p>I followed the installation instructions on the Octopress page, and the install went smoothly. Github pages took a little while to build, but once it was up it worked well. I even managed to hook it up to my own domain. Using git to make posts is a little weird, but I think I&#8217;ll get used to the process. There are some helper commands (implemented as rake tasks) that you can run to make new posts, generate the site, and even deploy, which makes things much easier. I&#8217;m still going to have to write some aliases because for whatever reason I have to run <code>bundle exec rake</code> instead of just <code>rake</code>. A couple of the commands seem to be often run in sequence, so I&#8217;ll probably make an alias to run them together. I&#8217;ll try and remember to post those here somewhere (I think Octopress has built in gist support or something).</p>
+<p>I&#8217;ve gone through the first two lectures, most of which is just a general overview of what SaaS is, and agile development is, and how they contrast to other practices. The next two lectures are available, along with the first homework and quiz, but I haven&#8217;t had time to go through them yet. I think the course will be a great experience, as it&#8217;s only about 6-12 hours of work a week for five weeks. There is a follow up, more advanced course that I plan on taking afterwards. I&#8217;m hoping there will be other contemporary CS classes offered via edX. I think it&#8217;s a great opportunity for students and graduates to see a different aspect of software engineering that doesn&#8217;t seem to be taught in typical classes very often.</p>
 
-<p><em>- Edit -</em> Found the gist support:</p>
-
-<div><script src='https://gist.github.com/4535615.js'></script>
-<noscript><pre><code>alias octo='bundle exec rake'
-alias octog='bundle exec rake generate'
-alias octod='bundle exec rake deploy'
-alias octogd='bundle exec rake generate &amp;&amp; bundle exec rake deploy'</code></pre></noscript></div>
-
-
-<p>I&#8217;m not entirely sure what I&#8217;ll end up using this blog for mostly, but it&#8217;ll probably be a fair amount of everything. Maybe there will be some rants about code, or links to neat articles. I might add some posts about EvE Online, or maybe some entries about my ongoing Rails projects.</p>
-
-<p>Who knows.</p>
+<p>I&#8217;ll do another post at the end of the course with my thoughts on how it went, and any new practices or concepts I learned. <a href="https://www.edx.org/courses/BerkeleyX/CS169.1x/2013_Spring/about">You can still register for the course</a> if you&#8217;re interested, or check out the <a href="http://www.youtube.com/watch?v=V36LpHqtcDY">intro video</a>.</p>
 </div>
 
 
@@ -142,21 +131,15 @@ alias octogd='bundle exec rake generate &amp;&amp; bundle exec rake deploy'</cod
   
 
 
-<time datetime="2013-01-14T17:52:00-05:00" pubdate data-updated="true">Jan 14<span>th</span>, 2013</time>
+<time datetime="2013-01-16T19:09:00-05:00" pubdate data-updated="true">Jan 16<span>th</span>, 2013</time>
       
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/github/'>Github</a>, <a class='category' href='/blog/categories/octopress/'>Octopress</a>, <a class='category' href='/blog/categories/ruby/'>Ruby</a>
-  
-</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://eebs.github.com/blog/2013/01/14/up-and-running-with-octopress/" data-via="EebsKobeissi" data-counturl="http://eebs.github.com/blog/2013/01/14/up-and-running-with-octopress/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://eebs.github.com/blog/2013/01/16/berkeley-edx-software-as-a-service/" data-via="EebsKobeissi" data-counturl="http://eebs.github.com/blog/2013/01/16/berkeley-edx-software-as-a-service/" >Tweet</a>
   
   
   
@@ -165,8 +148,8 @@ alias octogd='bundle exec rake generate &amp;&amp; bundle exec rake deploy'</cod
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2013/01/14/openssl-is-a-pain/" title="Previous Post: OpenSSL Is A Pain">&laquo; OpenSSL Is A Pain</a>
       
-        <a class="basic-alignment right" href="/blog/2013/01/14/openssl-is-a-pain/" title="Next Post: OpenSSL Is A Pain">OpenSSL Is A Pain &raquo;</a>
       
     </p>
   </footer>
@@ -241,8 +224,8 @@ alias octogd='bundle exec rake generate &amp;&amp; bundle exec rake deploy'</cod
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://eebs.github.com/blog/2013/01/14/up-and-running-with-octopress/';
-        var disqus_url = 'http://eebs.github.com/blog/2013/01/14/up-and-running-with-octopress/';
+        var disqus_identifier = 'http://eebs.github.com/blog/2013/01/16/berkeley-edx-software-as-a-service/';
+        var disqus_url = 'http://eebs.github.com/blog/2013/01/16/berkeley-edx-software-as-a-service/';
         var disqus_script = 'embed.js';
       
     (function () {
