@@ -3,7 +3,7 @@ layout: post
 title: "Berkeley edX: Software as a Service"
 date: 2013-01-16 19:09
 comments: true
-categories: 
+categories: [Software Engineering, edX]
 ---
 
 Some background: One of the things my company and [many](http://techcrunch.com/2013/01/03/forrester-saas-and-data-driven-smart-apps-fueling-worldwide-software-growth/) [others](http://www.computerworlduk.com/in-depth/cloud-computing/3419286/saas-in-2013-companies-trends-watch/) are doing is moving to a more SaaS oriented business model. It's a growing space in software engineering, and as we see more and more cloud based services I can only expect this trend to continue. SaaS provides many benefits, especially for a rapidly changing product as ours. SaaS would allow us to roll out features to clients quickly and in a scalable manner, ensuring some level of consistency across all clients without having to worry about which version a client was on, which version fixed a bug they had, etc. We recently made some changes to our software that made it technically feasible to use a SaaS methodology, allowing us to run multiple clients off one instance of our product. We don't currently have that set up, but we're definitely moving in the right direction.
