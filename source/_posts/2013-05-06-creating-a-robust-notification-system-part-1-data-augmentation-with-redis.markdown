@@ -25,7 +25,7 @@ As I've mentioned in a [previous blog post](http://localhost:4000/blog/2013/01/2
 
 At a very basic level, I needed to be able to send a user a notification containing some message about the state change. I also wanted to be able to send the same message to multiple users, in the case that perhaps I needed to send out a site wide notification to all users. There are many sites out there that use this concept (Facebook is a great example), so you've almost certainly used such a system before. I started by creating a Message model for holding the content of the message in addition to the User model I already had. The Message model simply has **title** and **body** fields, of type string and text respectively. There is a many to many relationship between Users and Messages. If you have the most basic of many to many relationships, Rails has the [*has_and_belongs_to_many* association](http://guides.rubyonrails.org/association_basics.html#the-has_and_belongs_to_many-association), which simply creates a join table with two columns for the foreign keys. However, I needed to store a little bit more information such when the message was read by the user, so I created a Notification join model. The Notification model has **user_id** and **message_id** fields, along with a **read_at** timestamp. I connected these three models with Rails' [*has_many_through* association](http://guides.rubyonrails.org/association_basics.html#the-has_many-through-association).
 
-[INSERT picture of association]
+{% img /images/notification_association.png 1294 620 Notification Association %}
 
 Here's what the code for my models ended up looking like:
 
